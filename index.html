@@ -5,131 +5,33 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
  <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
-	<link rel="stylesheet" href="agriappeals/bootstrap/css/hover.css">
-  <link href="coford/bootstrap/css/animate.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" rel="stylesheet">
+  
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="scripts.js"></script>
 
-
-	<script>
-	(function ($) {
-  $(document).ready(function(){
-
-    // hide .navbar first
-    $(".navbar").hide();
-
-    // fade in .navbar
-    $(function () {
-        $(window).scroll(function () {
-
-                 // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 75) {
-                $('.navbar').fadeIn();
-            } else {
-                $('.navbar').fadeOut();
-            }
-        });
-    });
-
-});
-  }(jQuery));
-  
-
-(function ($) {
-  $(document).ready(function(){
-
-
-    // fade in .scroll-link
-    $(function () {
-        $(window).scroll(function () {
-
-                 // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 550) {
-                $('.scroll-link').fadeOut();
-            } else {
-                $('.scroll-link').fadeIn();
-            }
-        });
-    });
-
-});
-  }(jQuery)); 
-
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (1100) specifies the number of milliseconds it takes to scroll to the specified area, the (-130) is a 130px offset from the anchor.
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top -130
-      }, 1100, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash;
-      });
-    } // End if
-  });
-});
-
-var animateHTML = function () {
-  var elems,
-    windowHeight
-  var init = function () {
-    elems = document.getElementsByClassName('hidden')
-    windowHeight = window.innerHeight
-    _addEventHandlers()
-  }
-  var _addEventHandlers = function () {
-    window.addEventListener('scroll', _checkPosition)
-    window.addEventListener('resize', init)
-  }
-  var _checkPosition = function () {
-    for (var i = 0; i < elems.length; i++) {
-      var posFromTop = elems[i].getBoundingClientRect().top
-      if (posFromTop - windowHeight <= -250) {
-        elems[i].className = elems[i].className.replace('hidden', 'animated bounceInUp')
-      }
-    }
-  }
-  return {
-    init: init
-  }
-}
-animateHTML().init()
-
-
-</script>
-
-	
-	
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white">
+<body class="bg-dark">
 
 <div class="bgimg-1 text-center">
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
         
-		<a href="#"><img class="masthead-brand" src="logo3.png" alt="Coford Logo" style="height:60px;"></a>
+		<a href="#"><img class="masthead-brand profile-photo" src="profile-photo.png" alt="Coford Logo" ></a>
     
     <!--      <nav class="nav navbar nav-masthead justify-content-center mt-2 navbar-expand-lg">
-              <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse" id="navbarCollapse">---
@@ -148,79 +50,25 @@ animateHTML().init()
           
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav">
-              <li><a class="nav-link" href="">Our Clubs</a></li>
-              <li><a class="nav-link" href="">Packages</a></li>
-              <li><a class="nav-link" href="">Pricing</a></li>
-              <li><a class="nav-link" href="/shop/">Shop</a></li>
-              <li><a class="nav-link" href="">About Us</a></li>
-              <li><a class="nav-link" href="">Contact Us</a></li>
-              <li><a class="nav-link" href="">Login</a></li>
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#education">Education</a></li>
+              <li><a class="nav-link" href="#work">Work Experience</a></li>
+              <li><a class="nav-link" href="https://github.com/wardc96/"><i class="fab fa-github fa-2x"></i></a></li>
+              <li><a class="nav-link" href="https://linkedin.com/in/conor-ward96"><i class="fab fa-linkedin fa-2x"></i></a></li>
+              <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
           </div>
               </div>
       
         </nav>
-
-
-
         </div>
-		
-		
-		<!-- <nav class="navbar navbar-expand-lg navbar-dark text-white fixed-top nav-bg-black shadow-sm py-0 justify-content-between" style="text-shadow: none;">
-<!-- <div class="container">
-		<a href="#"><img class="navbar-brand" src="logo.png" alt="Logo" style="height:72px;"></a>
-        <button class="hamburger hamburger--spring d-lg-none" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-		<span class="hamburger-box">
-		<span class="hamburger-inner"></span>
-		</span>
-		</button>
-        <div class="collapse navbar-collapse float-right" id="navbarCollapse">
-          <ul class="navbar-nav float-right">
-            <li class="nav-item py-lg-1">
-              <a class="nav-link  active border-bottom border-dark" href="coford-home.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item py-lg-1">
-              <a class="nav-link" href="parallax.html">About</a>
-            </li>
-			<li class="nav-item py-lg-1">
-              <a class="nav-link" href="#">Tools</a>
-            </li>
-			<li class="nav-item py-lg-1">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-
-          </ul>
-          <form class="form-inline mt-1 mt-md-2">
-            <input class="form-control mr-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success my-1 my-sm-0" type="submit">Search</button>
-          </form>--
-        </div>
-        </div> --
-
-        
-        <div class="container">
-          <a href="#"><img class="masthead-brand" src="logo.png" alt="Coford Logo" style="height:72px;"></a>
-            
-                <div class="nav nav-masthead justify-content-right">
-                  <a class="nav-link active" href="#">Home</a>
-                  <a class="nav-link" href="#test">About</a>
-                  <a class="nav-link" href="#">Contact</a>
-                </div>
-              </div>
-      </nav> -->
-		
-		
-		
-		
       </header>
 
-      <main role="main" class="inner cover" style="margin-top: 16vh;">
-        <h1 class="cover-heading bold">ClubKit</h1>
-		
-        <p class="lead">We need a motto</p>
+      <main role="main" class="inner cover" style="margin-top: 6vh;">
+        <h1 class="cover-heading">Conor Ward</h1>
+        <p class="lead">Computing Graduate</p>
 
-		
-		<a class="scroll-link" href="#content">
+		<a class="scroll-link" href="#about">
 		<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
 		 <g fill="none" fill-rule="evenodd">
 			<rect width="70" height="118" x="1.5" y="1.5" stroke="#f5f5f5" stroke-width="3" rx="36"/>
@@ -228,8 +76,6 @@ animateHTML().init()
 		</g>
 	    </svg>
 	    </a>
-		
-		
       </main>
 	
 
@@ -241,56 +87,89 @@ animateHTML().init()
 
 </div> <!--##End of large Home Image##-->
 
-<div class="content container" style="" id="content">
+<div class="section">
+  <br>
+<div class="container" id="about">
+<h2><i class="fas fa-info-circle"></i> About</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
-<hr class="featurette-divider">
+<br>
+<h2><i class="fas fa-code"></i> Skills</h2>
+<div class="row">
+    <div class="col-sm skill" data-aos="fade-right">
+      One of three columns
+    </div>
+    <div class="col-sm skill" data-aos="fade-right">
+      One of three columns
+    </div>
+    <div class="col-sm skill" data-aos="fade-right">
+      One of three columns
+    </div>
+  </div>
+<br>
 
-         <div class="row featurette justify-content-between">
-          <div class="col-md-7">
-           <h3 class="featurette-heading"><a href="#">Rent-a-Pitch</a></h3>
-            <p class="lead">We rent da pitches</p>
-         
-<a class="btn btn-lg btn-coford float-right mb-1 shadow-sm" href="/toolsservices/" role="button">Learn more</a>		 </div>
-          <div class="col-md-4 my-auto">
-         <a href="#"> <img class="featurette-image img-fluid mx-auto rounded" src="https://parks.state.wa.us/ImageRepository/Document?documentID=10716" alt="COFORD Council"></a>
-          </div>
-        </div>
 
-        <hr class="featurette-divider">
+</div><!--Container-->
+</div><!--Section-->
 
-        <div class="row featurette justify-content-between bg-dark" id="test">
-          <div class="col-md-7 order-md-2">
-            <h3 class="featurette-heading">Rosters</h3>
-            <p class="lead">We do the rosters</p>
-          </div>
-          <div class="col-md-4 order-md-1">
-            <a href="#"><img class="featurette-image rounded img-fluid mx-auto" src="https://parks.state.wa.us/ImageRepository/Document?documentID=10716" alt="COFORD Logo"></a>
-          </div>
-        </div>
+<div class="section bg-light text-dark">
+<div class="container" id="education">
+    <h2><i class="fas fa-school"></i></i> Education</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+    <br>
+    <h2 id="work"><i class="fas fa-briefcase"></i> Work Experience</h2>
+    
+    <h4>BoyleSports - Trainee Deputy Manager</h4>
+    <p><i>01/2019 - Current, Ashbourne Co.Meath</i></p>
+<ul>
+<li>Part time cashier whilst in college. Taking bets and paying out customers in a busy shop</li>
+<li>Currently promoted to trainee deputy manager with responsibilities such as opening/closing the shop.</li>
+<li>Skills include cash management, customer service and leadership</li>
 
-        <hr class="featurette-divider">
+</ul>
+    <br>
 
-        <div class="row featurette justify-content-between">
-          <div class="col-md-7">
-            <h3 class="featurette-heading">Shop</h3>
-            <p class="lead">Sell your club gear here</p>
-          </div>
-          <div class="col-md-4">
-            <a href="#"><img class="featurette-image img-fluid mx-auto" src="https://parks.state.wa.us/ImageRepository/Document?documentID=10716" alt="DAFM Logo"></a>
-          </div>
-        </div>
+    
+    <h4>Department of Agriculture - Web Development Intern</h4>
+    <p><i>01/2018 - 09/2018, Kildare Street, Dublin</i></p>
+<ul>
+<li>Completed full redesigns of existing websites to improve navigation, enhance visuals and strengthen search engine rankings.</li>
+<li>Reviewed code to validate structures, assess security and verify browser, device and operating system compatibility.</li>
+<li>Created site layout and user interface using HTML and CSS practices.</li>
+<li>Fully redesigned <a href="https://www.coford.ie">www.coford.ie</a> during my time here.</li>
+</ul>
+    <br>
 
-<hr class="featurette-divider">
 
-      </div><!-- /.container -->
-</div>
+    <h4>Pillo Hotel Ashbourne - Barman</h4>
+    <p><i>10/2016 - 01/2018 and 09/2018 - 01/2019, Ashbourne, Meath</i></p>
+<ul>
+<li>Part time barman in a busy hotel.</li>
+<li>Tracked bar stock levels and promptly replenished low materials to prevent shortages.</li>
+<li>Took customer orders and capitalized on opportunities to sell special beverage and food options.</li>
+</ul>
+    <br>
+
+
+</div> <!--/Container-->
+</div><!--/section-->
+
+
+<div class="section">
+    <div class="container" id="contact">
+<h2><i class="fas fa-phone-square"></i> Contact</h2>
+
+    </div> <!--/Container-->
+    </div><!--/section-->
+
 
 
 
 
 <div class="bgimg-2">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">AD BOYZ</span>
+    <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">Conor Ward</span>
   </div>
 </div>
 
@@ -331,6 +210,7 @@ animateHTML().init()
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	  
+
 <script>
 //This function adds the active class to the current navbar link
 $(function(){
