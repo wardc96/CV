@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+ <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+	<link rel="stylesheet" href="agriappeals/bootstrap/css/hover.css">
+  <link href="coford/bootstrap/css/animate.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+	<script>
+	(function ($) {
+  $(document).ready(function(){
+
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 75) {
+                $('.navbar').fadeIn();
+            } else {
+                $('.navbar').fadeOut();
+            }
+        });
+    });
+
+});
+  }(jQuery));
+  
+
+(function ($) {
+  $(document).ready(function(){
+
+
+    // fade in .scroll-link
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 550) {
+                $('.scroll-link').fadeOut();
+            } else {
+                $('.scroll-link').fadeIn();
+            }
+        });
+    });
+
+});
+  }(jQuery)); 
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (1100) specifies the number of milliseconds it takes to scroll to the specified area, the (-130) is a 130px offset from the anchor.
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top -130
+      }, 1100, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash;
+      });
+    } // End if
+  });
+});
+
+var animateHTML = function () {
+  var elems,
+    windowHeight
+  var init = function () {
+    elems = document.getElementsByClassName('hidden')
+    windowHeight = window.innerHeight
+    _addEventHandlers()
+  }
+  var _addEventHandlers = function () {
+    window.addEventListener('scroll', _checkPosition)
+    window.addEventListener('resize', init)
+  }
+  var _checkPosition = function () {
+    for (var i = 0; i < elems.length; i++) {
+      var posFromTop = elems[i].getBoundingClientRect().top
+      if (posFromTop - windowHeight <= -250) {
+        elems[i].className = elems[i].className.replace('hidden', 'animated bounceInUp')
+      }
+    }
+  }
+  return {
+    init: init
+  }
+}
+animateHTML().init()
+
+
+</script>
+
+	
+	
+</head>
+<body class="bg-white">
+
+<div class="bgimg-1 text-center">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+        
+		<a href="#"><img class="masthead-brand" src="logo3.png" alt="Coford Logo" style="height:60px;"></a>
+    
+    <!--      <nav class="nav navbar nav-masthead justify-content-center mt-2 navbar-expand-lg">
+              <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse" id="navbarCollapse">---
+            <a class="nav-link" href="#test">About</a>
+            <a class="nav-link active" href="#">Our Clubs</a>
+            <a class="nav-link" href="#test">Packages</a>
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Login</a>
+          <</div>
+          </nav>--->
+          <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+          <nav class="nav nav-masthead navbar navbar-expand-md">
+              <div class="container">
+          
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li><a class="nav-link" href="">Our Clubs</a></li>
+              <li><a class="nav-link" href="">Packages</a></li>
+              <li><a class="nav-link" href="">Pricing</a></li>
+              <li><a class="nav-link" href="/shop/">Shop</a></li>
+              <li><a class="nav-link" href="">About Us</a></li>
+              <li><a class="nav-link" href="">Contact Us</a></li>
+              <li><a class="nav-link" href="">Login</a></li>
+      </ul>
+          </div>
+              </div>
+      
+        </nav>
+
+
+
+        </div>
+		
+		
+		<!-- <nav class="navbar navbar-expand-lg navbar-dark text-white fixed-top nav-bg-black shadow-sm py-0 justify-content-between" style="text-shadow: none;">
+<!-- <div class="container">
+		<a href="#"><img class="navbar-brand" src="logo.png" alt="Logo" style="height:72px;"></a>
+        <button class="hamburger hamburger--spring d-lg-none" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+		<span class="hamburger-box">
+		<span class="hamburger-inner"></span>
+		</span>
+		</button>
+        <div class="collapse navbar-collapse float-right" id="navbarCollapse">
+          <ul class="navbar-nav float-right">
+            <li class="nav-item py-lg-1">
+              <a class="nav-link  active border-bottom border-dark" href="coford-home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item py-lg-1">
+              <a class="nav-link" href="parallax.html">About</a>
+            </li>
+			<li class="nav-item py-lg-1">
+              <a class="nav-link" href="#">Tools</a>
+            </li>
+			<li class="nav-item py-lg-1">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+          </ul>
+          <form class="form-inline mt-1 mt-md-2">
+            <input class="form-control mr-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success my-1 my-sm-0" type="submit">Search</button>
+          </form>--
+        </div>
+        </div> --
+
+        
+        <div class="container">
+          <a href="#"><img class="masthead-brand" src="logo.png" alt="Coford Logo" style="height:72px;"></a>
+            
+                <div class="nav nav-masthead justify-content-right">
+                  <a class="nav-link active" href="#">Home</a>
+                  <a class="nav-link" href="#test">About</a>
+                  <a class="nav-link" href="#">Contact</a>
+                </div>
+              </div>
+      </nav> -->
+		
+		
+		
+		
+      </header>
+
+      <main role="main" class="inner cover" style="margin-top: 16vh;">
+        <h1 class="cover-heading bold">ClubKit</h1>
+		
+        <p class="lead">We need a motto</p>
+
+		
+		<a class="scroll-link" href="#content">
+		<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
+		 <g fill="none" fill-rule="evenodd">
+			<rect width="70" height="118" x="1.5" y="1.5" stroke="#f5f5f5" stroke-width="3" rx="36"/>
+			<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#f5f5f5"/>
+		</g>
+	    </svg>
+	    </a>
+		
+		
+      </main>
+	
+
+     
+    </div>
+	
+	
+	
+
+</div> <!--##End of large Home Image##-->
+
+<div class="content container" style="" id="content">
+
+<hr class="featurette-divider">
+
+         <div class="row featurette justify-content-between">
+          <div class="col-md-7">
+           <h3 class="featurette-heading"><a href="#">Rent-a-Pitch</a></h3>
+            <p class="lead">We rent da pitches</p>
+         
+<a class="btn btn-lg btn-coford float-right mb-1 shadow-sm" href="/toolsservices/" role="button">Learn more</a>		 </div>
+          <div class="col-md-4 my-auto">
+         <a href="#"> <img class="featurette-image img-fluid mx-auto rounded" src="https://parks.state.wa.us/ImageRepository/Document?documentID=10716" alt="COFORD Council"></a>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette justify-content-between bg-dark" id="test">
+          <div class="col-md-7 order-md-2">
+            <h3 class="featurette-heading">Rosters</h3>
+            <p class="lead">We do the rosters</p>
+          </div>
+          <div class="col-md-4 order-md-1">
+            <a href="#"><img class="featurette-image rounded img-fluid mx-auto" src="https://parks.state.wa.us/ImageRepository/Document?documentID=10716" alt="COFORD Logo"></a>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette justify-content-between">
+          <div class="col-md-7">
+            <h3 class="featurette-heading">Shop</h3>
+            <p class="lead">Sell your club gear here</p>
+          </div>
+          <div class="col-md-4">
+            <a href="#"><img class="featurette-image img-fluid mx-auto" src="https://parks.state.wa.us/ImageRepository/Document?documentID=10716" alt="DAFM Logo"></a>
+          </div>
+        </div>
+
+<hr class="featurette-divider">
+
+      </div><!-- /.container -->
+</div>
+
+
+
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">AD BOYZ</span>
+  </div>
+</div>
+
+
+<!-- <div class="bgimg-1 mh-25">
+  <div class="caption">
+    <span class="border">COOL!</span>
+  </div>
+</div> -->
+
+<!-- FOOTER -->
+
+      <footer class="container">
+        <hr class="featurette-divider">
+        <ul class="float-right list-unstyled">
+        <li><i class="fas fa-address-book"></i> Contact Us: <br><p>Project Test<br>Project Test<br> Ag House,<br>
+      3 West,<br>Kildare Street,<br> Dublin 2</p></li>
+    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:fsd@agriculture.gov.ie"></a></li>
+		<li><i class="fas fa-mobile"></i> Phone:  <a href="tel:01-6072487">+353 (0)123456</a></li><br>
+        </ul>
+
+        <p> <a href="https://www.agriculture.gov.ie/legalnotices/copyright/">&copy; 2017-2018 PROJECT</a> &middot; Newsletter</p>
+		
+	
+    <p>Get the latest update from us by subscribing to our newsletter.</p>
+		<form class="form-inline">
+  <div class="form-group  mb-2">
+    <input type="email" class="form-control" id="email1" placeholder="name@example.com">
+  </div>
+  <button type="submit" class="btn btn-success mb-2" data-toggle="tooltip" data-placement="top" title="This button will subscribe you to our newsletter">Subscribe</button>
+</form>
+      </footer>
+
+	  
+	  
+	  
+	  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	  
+<script>
+//This function adds the active class to the current navbar link
+$(function(){
+    var current = location.pathname;
+    $('.navbar li a').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active border-bottom border-dark');
+        }
+    })
+})
+</script>
+<script>
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Menu opens through data-target tag but adds animation thorugh this function
+  });
+</script>  
+  <script>
+      AOS.init();
+    </script>
+</body>
+</html>
