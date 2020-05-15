@@ -489,8 +489,8 @@ position: relative;
 }
 
 #SkillBox {
-  font-size: 20px;
-  font-family: 'Indie Flower', cursive;
+  font-size: 18px;
+  //font-family: 'Indie Flower', cursive;
   width: 95%;
   height: auto;
   margin: 15px auto;
@@ -951,7 +951,7 @@ to {
   margin-left: 15px;
   text-shadow: none;
   color: #fff;
-  //font-family: Lato-Regular, sans-serif;
+  
   font-size: 16px;
 }
 .PercentText {
