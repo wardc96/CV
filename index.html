@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+<title>Conor Ward</title>
  <!-- Bootstrap core CSS -->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--->
@@ -20,15 +20,16 @@
   <script src="scripts.js"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+
 </head>
-<body class="bg-dark">
+<body class="bg-dark" id="top">
 
 <div class="bgimg-1 text-center">
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
         
-		<a href="#"><img class="masthead-brand profile-photo" src="profile-photo.png" alt="Coford Logo" ></a>
+		<img class="masthead-brand profile-photo" src="profile-photo.png" alt="Conor Ward Photo" >
     
     <!--      <nav class="nav navbar nav-masthead justify-content-center mt-2 navbar-expand-lg">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,19 +43,18 @@
             <a class="nav-link" href="#">Login</a>
           <</div>
           </nav>--->
-          <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-          <nav class="nav nav-masthead navbar navbar-expand-md">
-              <div class="container">
           
+          <nav class="nav nav-dark nav-masthead navbar navbar-expand-md">
+              <div class="container">
+                 
           <div class="collapse navbar-collapse" id="navbarCollapse">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
             <ul class="navbar-nav">
               <li><a class="nav-link" href="#about">About</a></li>
               <li><a class="nav-link" href="#education">Education</a></li>
               <li><a class="nav-link" href="#work">Work Experience</a></li>
-              <li><a class="nav-link" href="https://github.com/wardc96/"><i class="fab fa-github fa-2x"></i></a></li>
-              <li><a class="nav-link" href="https://linkedin.com/in/conor-ward96"><i class="fab fa-linkedin fa-2x"></i></a></li>
               <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
           </div>
@@ -66,7 +66,7 @@
 
       <main role="main" class="inner cover" style="margin-top: 6vh;">
         <h1 class="cover-heading">Conor Ward</h1>
-        <p class="lead">Computing Graduate</p>
+        
 
 		<a class="scroll-link" href="#about">
 		<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
@@ -91,19 +91,109 @@
   <br>
 <div class="container" id="about">
 <h2><i class="fas fa-info-circle"></i> About</h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>My name is Conor Ward and I am a recent graduate from Dublin City University, graduating with a 2nd Class Honours Grade 1 (2:1). From my time in university I have experience with HTML, CSS, JavaScript, Python. I have completed various projects mainly using Python and the Django framework. One of which, my final year project, is available to view on my <a class="text-info" href="https://github.com/wardc96/">Github page</a>.</p>
+<p>
+    My work experience includes working for the Department of Agriculture as a web development intern where I redesigned department sites such as www.coford.ie, as well as other small site changes across the <a class ="text-info" href="https://www.agriculture.gov.ie">DAFM website</a>. 
+    Other work includes creating an online emergency consultation page for a popular Dublin dental practice for customers to have dental consultations over a video call.
+    </p>
 
 <br>
 <h2><i class="fas fa-code"></i> Skills</h2>
 <div class="row">
     <div class="col-sm skill" data-aos="fade-right">
-      One of three columns
+      <h5>Technical</h5>
+        <div id="SkillBox">
+          <div class="SkillBar">
+            <div id="Skill-HTML"> 
+              <span class="Skill-Area ">HTML</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+          
+          <div class="SkillBar">
+            <div id="Skill-CSS">
+              <span class="Skill-Area ">CSS</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+
+          <div class="SkillBar">
+            <div id="Skill-Bootstrap">
+              <span class="Skill-Area ">Bootstrap</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+
+          <div class="SkillBar">
+            <div id="Skill-Python">
+              <span class="Skill-Area ">Python</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+
+          <div class="SkillBar">
+            <div id="Skill-Django">
+              <span class="Skill-Area ">Django</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+
+          <div class="SkillBar">
+            <div id="Skill-Angular">
+              <span class="Skill-Area ">Angular</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+
+          
+        </div>
+        
     </div>
     <div class="col-sm skill" data-aos="fade-right">
-      One of three columns
-    </div>
-    <div class="col-sm skill" data-aos="fade-right">
-      One of three columns
+        <h5>Personal</h5>
+        <div id="SkillBox">
+          <div class="SkillBar">
+            <div id="Skill-Problem"> 
+              <span class="Skill-Area ">Problem Solving</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+          
+          <div class="SkillBar">
+            <div id="Skill-Time">
+              <span class="Skill-Area ">Time Keeping</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+
+          <div class="SkillBar">
+            <div id="Skill-Teamwork">
+              <span class="Skill-Area ">Teamwork</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+
+          <div class="SkillBar">
+            <div id="Skill-CustomerService">
+              <span class="Skill-Area ">Customer Service</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+
+          <div class="SkillBar">
+            <div id="Skill-Communication">
+              <span class="Skill-Area ">Communication</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+
+          <div class="SkillBar">
+            <div id="Skill-TeamPlayer">
+              <span class="Skill-Area ">Team Player</span>
+              <span class="PercentText "></span>
+            </div>
+          </div>
+          </div>
     </div>
   </div>
 <br>
@@ -115,8 +205,21 @@
 <div class="section bg-light text-dark">
 <div class="container" id="education">
     <h2><i class="fas fa-school"></i></i> Education</h2>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    
+
+    <div class="row">
+      <div class="col-sm">
+    <h4>Dublin City University</h4> 
+    <p><i>2014-2019</i></p>
+
+<h5>Enterprise Computing - 2nd Class Honours Grade 1 (2.1)</h5>
+<p>Enterprise computing has equipped me with the necessary skills to work with computing technology across a broad spectrum of business enterprises.
+  I have gained experience in computing technologies, such as computers themselves, operating systems, web systems the Internet and various programming languages.
+ </p><p>In my third year I completed a work placement programme at The department of agriculture in the IMT department as a web development intern. I gained a valuable insight into the professional and practical business world as well as gaining valuable experience.
+</p>
+<p>My final year consisted of a major team-based project. Our idea was a management system for lcoal sports clubs called ClubKit. The source code is available on my <a class="text-info" href="https://github.com/wardc96/">Github</a>.</p>
+</div>
+
+</div>
     <br>
     <h2 id="work"><i class="fas fa-briefcase"></i> Work Experience</h2>
     
@@ -137,7 +240,7 @@
 <li>Completed full redesigns of existing websites to improve navigation, enhance visuals and strengthen search engine rankings.</li>
 <li>Reviewed code to validate structures, assess security and verify browser, device and operating system compatibility.</li>
 <li>Created site layout and user interface using HTML and CSS practices.</li>
-<li>Fully redesigned <a href="https://www.coford.ie">www.coford.ie</a> during my time here.</li>
+<li>Fully redesigned <a class="text-info" href="https://www.coford.ie">www.coford.ie</a> during my time here.</li>
 </ul>
     <br>
 
@@ -159,6 +262,56 @@
 <div class="section">
     <div class="container" id="contact">
 <h2><i class="fas fa-phone-square"></i> Contact</h2>
+<!--
+<ul>
+<li><i class="fas fa-envelope"></i> E-mail: <a class="text-info"  href="mailto:conor.ward96@hotmail.com">conor.ward96@hotmail.com</a></li>
+<li><i class="fas fa-phone-square"></i> Phone: 0860403000</li>
+<li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/conor-ward96">https://linkedin.com/in/conor-ward96</a></li>
+<li><i class="fab fa-github"></i> Github: <a href="https://github.com/wardc96/">https://github.com/wardc96/</a></li>
+
+</ul>
+-->
+<br>
+<div class="row">
+<div class="col-md text-center">
+    <i class="fas fa-envelope fa-3x"></i>
+    <br>
+    <br>
+    <a class="text-info"  href="mailto:conor.ward96@hotmail.com">conor.ward96@hotmail.com</a>
+</div>
+<br>
+
+<div class="col-md text-center">
+    <i class="fas fa-phone-square fa-3x"></i>
+    <br>
+    <br>
+    <a class="text-info" href="tel:0860403000">0860403000</a>
+</div>
+<br>
+
+<div class="col-md text-center">
+    <i class="fab fa-linkedin fa-3x"></i>
+    <br>
+    <br>
+    <a class="text-info" href="https://linkedin.com/in/conor-ward96">LinkedIn</a></li>
+</div>
+<br>
+
+<div class="col-md text-center">
+    <i class="fab fa-github fa-3x"></i>
+    <br>
+    <br>
+    <a class="text-info" href="https://github.com/wardc96/">Github</a>
+</div>
+<br>
+
+
+
+
+</div>
+
+
+
 
     </div> <!--/Container-->
     </div><!--/section-->
@@ -182,25 +335,9 @@
 
 <!-- FOOTER -->
 
-      <footer class="container">
+      <footer class="container text-center" style="height:20vh;">
         <hr class="featurette-divider">
-        <ul class="float-right list-unstyled">
-        <li><i class="fas fa-address-book"></i> Contact Us: <br><p>Project Test<br>Project Test<br> Ag House,<br>
-      3 West,<br>Kildare Street,<br> Dublin 2</p></li>
-    <li><i class="fas fa-envelope"></i> Email: <a href="mailto:fsd@agriculture.gov.ie"></a></li>
-		<li><i class="fas fa-mobile"></i> Phone:  <a href="tel:01-6072487">+353 (0)123456</a></li><br>
-        </ul>
-
-        <p> <a href="https://www.agriculture.gov.ie/legalnotices/copyright/">&copy; 2017-2018 PROJECT</a> &middot; Newsletter</p>
-		
-	
-    <p>Get the latest update from us by subscribing to our newsletter.</p>
-		<form class="form-inline">
-  <div class="form-group  mb-2">
-    <input type="email" class="form-control" id="email1" placeholder="name@example.com">
-  </div>
-  <button type="submit" class="btn btn-success mb-2" data-toggle="tooltip" data-placement="top" title="This button will subscribe you to our newsletter">Subscribe</button>
-</form>
+<a class="text-info" href="#top"><i class="fas fa-arrow-circle-up fa-2x text-info"></i> <br>Back to the top</a>
       </footer>
 
 	  

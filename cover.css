@@ -30,9 +30,11 @@ body a {
 
 }
 
+
+
 .profile-photo {
   border-radius: 80px;
-  width: 10vw;
+  width: 20vh;
 }
 
 .section {
@@ -43,7 +45,7 @@ body a {
 
 .skill {
   text-align:center;
-  border: 1px solid black;
+  
   height: 300px;
 }
 
@@ -485,3 +487,479 @@ position: relative;
 	opacity:0;
 	
 }
+
+#SkillBox {
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  width: 95%;
+  height: auto;
+  margin: 15px auto;
+  opacity:1;
+ 
+}
+#SkillBox img {
+  width: 20%;
+  height: 10%;
+  margin: auto 35%;
+  
+}
+.SkillBar {
+  width: 90%;
+  height: 25px;
+  position: relative;
+  background: rgba(17, 17, 17, .3);
+  margin: 20px auto;
+}
+#Skill-HTML {
+  width: 100%;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 25px;
+  position: absolute;
+  background-color: #007bff;
+}
+@keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 100%}
+}@-webkit-keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 100%}
+}@-moz-keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 100%}
+}@-o-keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 100%}
+}#Skill-CSS {
+  animation: Animate-CSS 5s;
+  -webkit-animation: Animate-CSS 5s;
+  -moz-animation: Animate-CSS 5s;
+  -o-animation: Animate-CSS 5s;
+  width: 80%;
+  height: 25px;
+  position: absolute;
+  background-color: #007bff;
+}
+@keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-webkit-keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-moz-keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-o-keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}
+
+#Skill-Bootstrap {
+  animation: Animate-Bootstrap 5s;
+  -webkit-animation: Animate-Bootstrap 5s;
+  -moz-animation: Animate-Bootstrap 5s;
+  -o-animation: Animate-Bootstrap 5s;
+  width: 75%;
+  height: 25px;
+  position: absolute;
+  background-color: #007bff;
+}
+@keyframes Animate-Bootstrap {
+  from {
+  width: 10px;
+}
+to {
+  width: 75%}
+}@-webkit-keyframes Animate-Bootstrap {
+  from {
+  width: 10px;
+}
+to {
+  width: 75%}
+}@-moz-keyframes Animate-Bootstrap {
+  from {
+  width: 10px;
+}
+to {
+  width: 75%}
+}@-o-keyframes Animate-Bootstrap {
+  from {
+  width: 10px;
+}
+to {
+  width: 75%}
+}
+
+#Skill-Python {
+  animation: Animate-Python 5s;
+  -webkit-animation: Animate-Python 5s;
+  -moz-animation: Animate-Python 5s;
+  -o-animation: Animate-Python 5s;
+  width: 65%;
+  height: 25px;
+  position: absolute;
+  background-color: #007bff;
+}
+@keyframes Animate-Python {
+  from {
+  width: 10px;
+}
+to {
+  width: 65%}
+}@-webkit-keyframes Animate-Python {
+  from {
+  width: 10px;
+}
+to {
+  width: 65%}
+}@-moz-keyframes Animate-Python {
+  from {
+  width: 10px;
+}
+to {
+  width: 65%}
+}@-o-keyframes Animate-Python {
+  from {
+  width: 10px;
+}
+to {
+  width: 65%}
+}
+
+#Skill-Django {
+  animation: Animate-Django 5s;
+  -webkit-animation: Animate-Django 5s;
+  -moz-animation: Animate-Django 5s;
+  -o-animation: Animate-Django 5s;
+  width: 60%;
+  height: 25px;
+  position: absolute;
+  background-color: #007bff;
+}
+@keyframes Animate-Django {
+  from {
+  width: 10px;
+}
+to {
+  width: 60%}
+}@-webkit-keyframes Animate-Django {
+  from {
+  width: 10px;
+}
+to {
+  width: 60%}
+}@-moz-keyframes Animate-Django {
+  from {
+  width: 10px;
+}
+to {
+  width: 60%}
+}@-o-keyframes Animate-Django {
+  from {
+  width: 10px;
+}
+to {
+  width: 60%}
+}
+
+#Skill-Angular {
+  animation: Animate-Angular 5s;
+  -webkit-animation: Animate-Angular 5s;
+  -moz-animation: Animate-Angular 5s;
+  -o-animation: Animate-Angular 5s;
+  width: 25%;
+  height: 25px;
+  position: absolute;
+  background-color: #007bff;
+}
+@keyframes Animate-Angular {
+  from {
+  width: 10px;
+}
+to {
+  width: 25%}
+}@-webkit-keyframes Animate-Angular {
+  from {
+  width: 10px;
+}
+to {
+  width: 25%}
+}@-moz-keyframes Animate-Angular {
+  from {
+  width: 10px;
+}
+to {
+  width: 25%}
+}@-o-keyframes Animate-Angular {
+  from {
+  width: 10px;
+}
+to {
+  width: 25%}
+}
+
+
+#Skill-Problem {
+  width: 85%;
+  animation: Animate-Problem 4s;
+  -webkit-animation: Animate-Problem 4s;
+  -moz-animation: Animate-Problem 4s;
+  -o-animation: Animate-Problem 4s;
+  height: 25px;
+  position: absolute;
+  background-color: #28a745;
+}
+@keyframes Animate-Problem {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}@-webkit-keyframes Animate-Problem {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}@-moz-keyframes Animate-Problem {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}@-o-keyframes Animate-Problem {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}#Skill-Time {
+  animation: Animate-Time 5s;
+  -webkit-animation: Animate-Time 5s;
+  -moz-animation: Animate-Time 5s;
+  -o-animation: Animate-Time 5s;
+  width: 80%;
+  height: 25px;
+  position: absolute;
+  background-color: #28a745;
+}
+@keyframes Animate-Time {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-webkit-keyframes Animate-Time {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-moz-keyframes Animate-Time {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-o-keyframes Animate-Time {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}
+
+#Skill-Teamwork {
+  animation: Animate-Teamwork 5s;
+  -webkit-animation: Animate-Teamwork 5s;
+  -moz-animation: Animate-Teamwork 5s;
+  -o-animation: Animate-Teamwork 5s;
+  width: 85%;
+  height: 25px;
+  position: absolute;
+  background-color: #28a745;
+}
+@keyframes Animate-Teamwork {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}@-webkit-keyframes Animate-Teamwork {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}@-moz-keyframes Animate-Teamwork {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}@-o-keyframes Animate-Teamwork {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}
+
+#Skill-CustomerService {
+  animation: Animate-CustomerService 5s;
+  -webkit-animation: Animate-CustomerService 5s;
+  -moz-animation: Animate-CustomerService 5s;
+  -o-animation: Animate-CustomerService 5s;
+  width: 80%;
+  height: 25px;
+  position: absolute;
+  background-color: #28a745;
+}
+@keyframes Animate-CustomerService {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-webkit-keyframes Animate-CustomerService {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-moz-keyframes Animate-CustomerService {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-o-keyframes Animate-CustomerService {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}
+
+#Skill-Communication {
+  animation: Animate-Communication 5s;
+  -webkit-animation: Animate-Communication 5s;
+  -moz-animation: Animate-Communication 5s;
+  -o-animation: Animate-Communication 5s;
+  width: 85%;
+  height: 25px;
+  position: absolute;
+  background-color: #28a745;
+}
+@keyframes Animate-Communication {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}@-webkit-keyframes Animate-Communication {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}@-moz-keyframes Animate-Communication {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}@-o-keyframes Animate-Communication {
+  from {
+  width: 10px;
+}
+to {
+  width: 85%}
+}
+
+#Skill-TeamPlayer {
+  animation: Animate-TeamPlayer 5s;
+  -webkit-animation: Animate-TeamPlayer 5s;
+  -moz-animation: Animate-TeamPlayer 5s;
+  -o-animation: Animate-TeamPlayer 5s;
+  width: 80%;
+  height: 25px;
+  position: absolute;
+  background-color: #28a745;
+}
+@keyframes Animate-TeamPlayer {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-webkit-keyframes Animate-TeamPlayer {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-moz-keyframes Animate-TeamPlayer {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}@-o-keyframes Animate-TeamPlayer {
+  from {
+  width: 10px;
+}
+to {
+  width: 80%}
+}
+
+
+
+
+
+.Skill-Area {
+  z-index: 1;
+  float: left;
+  //position: absolute;
+  margin-top: 0px;
+  margin-left: 15px;
+  text-shadow: none;
+  color: #fff;
+  //font-family: Lato-Regular, sans-serif;
+  font-size: 16px;
+}
+.PercentText {
+  z-index: 2;
+  position: relative;
+  padding-right: 15px;
+  margin-top: 0px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+  //font-family: Lato-Regular, sans-serif;
